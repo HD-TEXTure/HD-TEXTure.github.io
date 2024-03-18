@@ -21,8 +21,8 @@
     </section>
 
     <section class="framework">
-        <p>这里描述框架...</p>
-        <img src="path_to_diagram.png" alt="框架图">
+        <p>In the first stage of geometric restoration, we generate RGB images with multi-view consistency and corresponding normal maps for a single input image, incorporating depth supervision using the Depth anything model. This stage primarily serves to provide users with textured meshes for structural simplification, is not our focus. In the second stage, we begin by rendering the rough texture post-user operation as the initial input. We then generate an RGB image using the Depth2Img model and project it onto the texture map for gradient optimization. During this projection, we produce both low-resolution and high-resolution textures for self-supervision, effectively eliminating noise and "point gaps" in the high-resolution texture map.</p>
+        <img src="pipline.png" alt="pipline">
     </section>
 
     <!-- 其他部分如介绍、方法、结果、讨论等 -->
